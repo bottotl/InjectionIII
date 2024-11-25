@@ -13,3 +13,6 @@
 [submodule "ProfileSwiftUI"]
 	path = ProfileSwiftUI
 	url = https://github.com/johnno1962/ProfileSwiftUI
+[submodule "peertalk"]
+	path = peertalk
+	url = git@github.com:rsms/peertalk.git
