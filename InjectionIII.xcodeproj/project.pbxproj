@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2980A97C2CF4AF66005934B0 /* peertalk in Resources */ = {isa = PBXBuildFile; fileRef = 2980A97B2CF4AF66005934B0 /* peertalk */; };
+		345447532D0581550053A13C /* Peertalk in Frameworks */ = {isa = PBXBuildFile; productRef = 345447522D0581550053A13C /* Peertalk */; };
+		345447562D0581970053A13C /* Peertalk in Frameworks */ = {isa = PBXBuildFile; productRef = 345447552D0581970053A13C /* Peertalk */; };
+		345447582D0581B10053A13C /* Peertalk in Frameworks */ = {isa = PBXBuildFile; productRef = 345447572D0581B10053A13C /* Peertalk */; };
 		BB04337928D319F60007577F /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE490CE1FB2368A003D41BB /* FileWatcher.swift */; };
 		BB04337A28D31A350007577F /* StandaloneInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB5BE927E7D849005E8AF6 /* StandaloneInjection.swift */; };
 		BB16653A25E9A5F2001407AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB16653925E9A5F0001407AE /* main.m */; };
@@ -143,7 +145,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2980A97B2CF4AF66005934B0 /* peertalk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = peertalk; path = peertalk/peertalk; sourceTree = SOURCE_ROOT; };
 		BB037DF31FAD808B004B267C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BB037DF41FAD80D0004B267C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BB070C252512851B002FC45A /* AppCodePlugin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppCodePlugin; sourceTree = "<group>"; };
@@ -341,7 +342,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345447532D0581550053A13C /* Peertalk in Frameworks */,
 				BBB64FEC1FD585D50020BE47 /* WebKit.framework in Frameworks */,
+				345447562D0581970053A13C /* Peertalk in Frameworks */,
 				BBB040641FB17A6C007DDD0A /* ScriptingBridge.framework in Frameworks */,
 				BBB64DE51FD571310020BE47 /* libz.tbd in Frameworks */,
 			);
@@ -351,6 +354,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345447582D0581B10053A13C /* Peertalk in Frameworks */,
 				BBB64DE61FD5717C0020BE47 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,7 +560,6 @@
 				BBEB704B1FD28C6F00127711 /* XcodeHash.m */,
 				BB67DBB21FB0CDA8000EAC8A /* SimpleSocket.h */,
 				BB67DBB31FB0CDA8000EAC8A /* SimpleSocket.mm */,
-				2980A97B2CF4AF66005934B0 /* peertalk */,
 				BDB6A7CE21824C800001CF95 /* UserDefaults.h */,
 				BBCA02031FB0F10300E45F0F /* Assets.xcassets */,
 				BBCA025E1FB122C300E45F0F /* InjectionIdle.tif */,
@@ -750,6 +753,8 @@
 			);
 			name = InjectionIII;
 			packageProductDependencies = (
+				345447522D0581550053A13C /* Peertalk */,
+				345447552D0581970053A13C /* Peertalk */,
 			);
 			productName = InjectionIII;
 			productReference = BBCA01FE1FB0F10300E45F0F /* InjectionIII.app */;
@@ -845,6 +850,7 @@
 			);
 			mainGroup = BB439B5C1FABA64300B4F50B;
 			packageReferences = (
+				345447542D0581970053A13C /* XCLocalSwiftPackageReference "peertalk" */,
 			);
 			productRefGroup = BB439B661FABA64300B4F50B /* Products */;
 			projectDirPath = "";
@@ -1659,6 +1665,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		345447542D0581970053A13C /* XCLocalSwiftPackageReference "peertalk" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = peertalk;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		345447522D0581550053A13C /* Peertalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Peertalk;
+		};
+		345447552D0581970053A13C /* Peertalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Peertalk;
+		};
+		345447572D0581B10053A13C /* Peertalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 345447542D0581970053A13C /* XCLocalSwiftPackageReference "peertalk" */;
+			productName = Peertalk;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB439B5D1FABA64300B4F50B /* Project object */;
 }
